@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(204, 240, 0);
+        }
+
+        a::after {
+            content: " (clique aqui)";
+            font-size: 0.8em;
+            color: gray;
+        }
+
+        a::before {
+            content: "🔗 ";
+        }
+
+        .especial {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://linkedin.com" target="_blank" class="especial">Perfil LinkedIn</a></li>
+    </ul>
+    
+</body>
+</html>
